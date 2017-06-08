@@ -1,0 +1,4 @@
+<h1>All webcams in database</h1>
+<% @webcams.each do |webcam| %>
+<p><%= link_to "#{webcam.name} (#{webcam.location})", webcam.url %></p>
+<% end %>
