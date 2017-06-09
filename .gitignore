@@ -1,3 +1,6 @@
+## Manual additions
+/log/
+
 ## Gitignore from https://github.com/github/gitignore/blob/master/Ruby.gitignore
 
 *.gem
