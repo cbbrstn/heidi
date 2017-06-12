@@ -1,0 +1,7 @@
+<%= form_for @webcam do |f| %>
+
+Name: <%= f.text_field :name, prompt: "Name" %><br>
+URL: <%= f.text_field :url, prompt: "URL" %><br>
+Address: <%= f.text_field :location, prompt: "Address" %><br>
+<%= f.submit "Save" %>
+<% end %>

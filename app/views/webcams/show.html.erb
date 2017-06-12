@@ -1,2 +1,2 @@
-<h1>Webcams#show</h1>
-<p>Find me in app/views/webcams/show.html.erb</p>
+<h1><%= @webcam.name %> (<%= @webcam.location %>)</h1>
+<p><%= link_to "Open webcam", @webcam.url %></p>
