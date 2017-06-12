@@ -39,9 +39,14 @@ class WebcamsController < ApplicationController
 
   def edit
 
+
+
   end
 
   def update
+    if @webcam.update(webcam_params)
+      render :edit
+    end
   end
 
   private
