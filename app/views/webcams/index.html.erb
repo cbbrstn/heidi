@@ -2,3 +2,6 @@
 <% @webcams.each do |webcam| %>
 <p><%= link_to "#{webcam.name} (#{webcam.location})", webcam.url %></p>
 <% end %>
+
+
+<%= link_to "Add a webcam", new_webcam_path %>
