@@ -1,7 +1,12 @@
-<%= form_for @webcam do |f| %>
+<div class="row">
+  <div class="col s12">
+    <%= form_for @webcam do |f| %>
+        Name: <%= f.text_field :name, prompt: "Name" %><br>
+    URL: <%= f.text_field :url, prompt: "URL" %><br>
+    Address: <%= f.text_field :location, prompt: "Address" %><br>
+    <%= f.submit "Save", class: "btn waves-effect waves-light"%>
+    <% end %>
 
-Name: <%= f.text_field :name, prompt: "Name" %><br>
-URL: <%= f.text_field :url, prompt: "URL" %><br>
-Address: <%= f.text_field :location, prompt: "Address" %><br>
-<%= f.submit "Save" %>
-<% end %>
+  </div>
+
+</div>
