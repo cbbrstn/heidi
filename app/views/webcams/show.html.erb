@@ -1,3 +1,4 @@
-<h1><%= @webcam.name %> (<%= @webcam.location %>)</h1>
+<h3><%= @webcam.name %> (<%= @webcam.location %>)</h3>
+<%= image_tag("https://images.webcams.travel/daylight/preview/1010222761.jpg") %>
 <p><%= link_to "Open webcam", @webcam.url, target: :_blank  %></p>
 <p><%= link_to "Back", root_path %></p>
